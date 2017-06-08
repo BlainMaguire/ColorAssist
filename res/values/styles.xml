@@ -1,12 +1,18 @@
 <resources>
 
-	<style name="value">
-		<item name="android:textSize">30sp</item>
-	</style>
+    <!-- Base application theme. -->
+    <style name="Theme.AppCompat.Foo" parent="@style/Theme.AppCompat.NoActionBar">
+        <!--   your app branding color for the app bar -->
+        <item name="colorPrimary">#3F51F5</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#303F9F</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">#FF4081</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 
-	<style name="label" parent="@style/value">
-		<item name="android:textStyle">bold</item>
-		<item name="android:paddingRight">5dip</item>
-	</style>
+
 
 </resources>

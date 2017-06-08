@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal">
+
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/fromCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From Camera" />
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal">
+                <TableRow android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/previewPane"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:gravity="center_vertical"
+                    android:text="" />
+                </TableRow>
+                <TableRow android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/previewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="" />
+                </TableRow>
+            </TableLayout>
+
+
+            <Button
+                android:id="@+id/setCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Custom" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_vertical"
+        android:id="@+id/colorPickerTable">
+
+        <TableRow android:gravity="center_horizontal">
+
+            <ToggleButton
+                android:id="@+id/pickerButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 1"
+                android:textOff="Color 1"/>
+
+
+            <ToggleButton
+                android:id="@+id/pickerButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 2"
+                android:textOff="Color 2"/>
+
+            <ToggleButton
+                android:id="@+id/pickerButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 3"
+                android:textOff="Color 3"/>
+
+
+            <ToggleButton
+                android:id="@+id/pickerButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 4"
+                android:textOff="Color 4" />
+
+
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+
+            <ToggleButton
+                android:id="@+id/pickerButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 5"
+                android:textOff="Color 5"/>
+
+            <ToggleButton
+                android:id="@+id/pickerButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 6"
+                android:textOff="Color 6"/>
+
+            <ToggleButton
+                android:id="@+id/pickerButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 7"
+                android:textOff="Color 7"/>
+
+            <ToggleButton
+                android:id="@+id/pickerButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Color 8"
+                android:textOff="Color 8"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
