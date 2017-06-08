@@ -1,27 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
     <string name="app_name">Color Assist</string>
-	<string name="quarter">Quarter</string>
-	<string name="half">Half</string>
-	<string name="full">Full</string>
-  <style name="Theme.MY.Sherlock.Fullscreen" parent="Theme.Sherlock">
-
-		<item name="windowActionBarOverlay">true</item> <!-- for ActionBarSherlock -->
-    	<item name="android:actionBarStyle">@style/Theme.MY.Sherlock.Fullscreen.ActionBar</item>
-    	<item name="android:windowFullscreen">true</item>
-</style>
-
-<style name="Theme.MY.Sherlock.Fullscreen.ActionBar" parent="@style/Widget.Sherlock.ActionBar">
-    <item name="background">@android:color/transparent</item>
-    <item name="android:background">@android:color/transparent</item>
-    <item name="android:windowBackground">@android:color/transparent</item>
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:background">#88000000</item>
-    <item name="android:layout_gravity">center</item>
-</style>
-
-<style name="Theme.MY.Sherlock.Fullscreen.ActionBar.TabBar" parent="@style/Widget.Sherlock.ActionBar.TabBar">
-    <item name="android:layout_gravity">center</item>
-</style>
-
+    <string name="quarter">Quarter</string>
+    <string name="half">Half</string>
+    <string name="full">Full</string>
 </resources>
