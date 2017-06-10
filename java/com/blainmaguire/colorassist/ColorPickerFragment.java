@@ -30,6 +30,7 @@ public class ColorPickerFragment extends Fragment implements ColorPickerDialog.O
     private Button useCameraButton;
     private TextView huePane;
     private TextView hueName;
+    private TextView hueRGB;
     private ArrayList<View> touchables;
 
     private CameraViewMode cameraViewMode;
@@ -112,6 +113,7 @@ public class ColorPickerFragment extends Fragment implements ColorPickerDialog.O
 
         huePane = (TextView)view.findViewById(R.id.previewPane);
         hueName = (TextView)view.findViewById(R.id.previewName);
+        hueRGB = (TextView)view.findViewById(R.id.previewRGB);
         setPreview();
 
         //dialog = new ColorPickerDialog(getApplicationContext(), this, 0);
@@ -159,6 +161,9 @@ public class ColorPickerFragment extends Fragment implements ColorPickerDialog.O
 
     public void setPreview() {
         char[] currentColor = savedColors[selectedColor];
+        hueRGB.setText("R: "+Math.round((currentColor[0]/255.0)*100)
+                     +"% G: "+Math.round((currentColor[1]/255.0)*100)
+                     +"% B: "+Math.round((currentColor[2]/255.0)*100) + "%");
         huePane.setBackgroundColor(Color.argb(255, currentColor[0], currentColor[1], currentColor[2]));
         colorChangedListener.onColorChanged(currentColor[0], currentColor[1], currentColor[2]);
         hueName.setText(colorNameLookup.closestColor(currentColor[0],currentColor[1], currentColor[2]));
