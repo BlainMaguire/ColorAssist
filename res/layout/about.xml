@@ -50,7 +50,7 @@
 
                     <TextView android:text="Version" />
 
-                    <TextView android:text="2.0" />
+                    <TextView android:text="3.0" />
                 </TableRow>
 
                 <TableRow
